@@ -99,4 +99,4 @@
         <!-- I name my file 'base.html',  and use 'template inheritance' for more complex apps. -->
 
     2. Setup html file
-    <!-- I used a basic html file with a few 'h' tags to show dnago functionality in this lesson-->
+    <!-- I used a basic html file with a few 'h' tags to show django functionality in this lesson-->
