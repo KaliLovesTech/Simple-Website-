@@ -1,6 +1,6 @@
 from django.urls import path
-from site_app import views
+from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.base, name='base'),
 ]

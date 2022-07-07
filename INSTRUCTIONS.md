@@ -55,7 +55,7 @@
 
 # Setup Communication, Routing, and Views
 
-    ## add 'app' database and route to 'project'
+    ## Add 'app' database and route to 'project'
 
         1. setup database connection
             - run this command in a terminal/cmd:
@@ -84,12 +84,19 @@
                 "from django.urls import path"
         
         2. add path(s) from views file
-            "path('', views.home, name='home'),"
-            <!-- tells app when users choose the default path, the function 'home' in the views file will handle the logic-->
+            "path('', views.base, name='base'),"
+            <!-- tells app when users choose the default path, the function 'base' in the views file will handle the logic-->
         
         3. add the function 'home' to the views file
             "def home(request):
-                return render(request, 'home.html')"
-            <!-- when 'home' function is called the static html file 'home' is rendered -->
+                return render(request, 'base.html')"
+            <!-- when 'base' function is called the base html file is rendered -->
         
-    ## Create and setup Static file paths
+    ## Create and setup Template file paths
+
+    1. inside of the 'app' folder create another folder called 'templates'
+        - create the html file to be rendered
+        <!-- I name my file 'base.html',  and use 'template inheritance' for more complex apps. -->
+
+    2. Setup html file
+    <!-- I used a basic html file with a few 'h' tags to show dnago functionality in this lesson-->
