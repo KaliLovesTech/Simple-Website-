@@ -56,7 +56,7 @@
             <!-- you can choose the server port by running this command in a terminal/cmd:
                 'python manage.py runserver (port number)'-->
 
-# Setup Communication, Routing, and Logic 
+    ## <u>Setup Communication, Routing, and Logic</u> 
 
     ## Add 'app' to 'project'
 
