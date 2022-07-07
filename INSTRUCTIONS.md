@@ -34,7 +34,7 @@
                 - mac/linux:
                     source name_of_your_venv/bin/activate
 
-    ## Django project setup
+    ## Django project and app setup
         
         1. Create a django project
             - run this command in a terminal/cmd:
@@ -53,4 +53,43 @@
             - python manage.py runserver
             -navigate to server port 127.0.0.1:"xyz"
 
-# Customize Django application
+# Setup Communication, Routing, and Views
+
+    ## add 'app' database and route to 'project'
+
+        1. setup database connection
+            - run this command in a terminal/cmd:
+                - python manage.py migrate  
+                <!-- creates database -->
+
+        2. add app to project settings
+            - inside project folder, find the settings.py file
+                - add app to settings.py file:
+                    '(name of app)'
+                    ex. 'site_app'
+        
+        3. import include in project's urls.py file
+        
+        4. add app's 'url' path to project's urls.py
+            - app's default url path is app's name.urls
+            - ex. path('', include('site_app.urls')),
+              <!-tells site_project to route users to "site_app's urls-  -->
+        
+    ## Setup routing and views for app
+
+        1. create urls.py file in app's folder
+            - import 'app' views.py file
+                "from 'app' import views"  
+            - import 'path' from the django urls module
+                "from django.urls import path"
+        
+        2. add path(s) from views file
+            "path('', views.home, name='home'),"
+            <!-- tells app when users choose the default path, the function 'home' in the views file will handle the logic-->
+        
+        3. add the function 'home' to the views file
+            "def home(request):
+                return render(request, 'home.html')"
+            <!-- when 'home' function is called the static html file 'home' is rendered -->
+        
+    ## Create and setup Static file paths
