@@ -97,9 +97,9 @@
         
     ## Create and setup template file paths
 
-    1. inside of the 'app' folder create another folder called 'templates'
-        - create the html file to be rendered
-        <!-- I named my file 'base.html', because I may use 'template inheritance' for more complex apps. -->
+        1. inside of the 'app' folder create another folder called 'templates'
+            - create the html file to be rendered
+            <!-- I named my file 'base.html', because I may use 'template inheritance' for more complex apps. -->
 
-    2. Setup html file
-    <!-- I used a basic html file with a few 'h' tags to show django functionality in this lesson-->
+        2. Setup html file
+        <!-- I used a basic html file with a few 'h' tags to show django functionality in this lesson-->
